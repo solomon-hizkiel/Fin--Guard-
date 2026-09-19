@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.session
+*.session-journal
+.streamlit/secrets.toml
+.fin_guardian_credentials.json
+.env
+.venv/
+venv/
+*.csv
+fin_guardian.db
+community_reports.jsonl

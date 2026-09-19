@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fin-Guardian Scam Detector</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      body {
+        margin: 0;
+        width: 260px;
+        font-family: Segoe UI, system-ui, sans-serif;
+        background: #0f172a;
+        color: #e2e8f0;
+      }
+      main {
+        padding: 14px 16px 16px;
+      }
+      h1 {
+        margin: 0 0 4px;
+        font-size: 14px;
+        font-weight: 650;
+        letter-spacing: 0.01em;
+      }
+      p {
+        margin: 0;
+        color: #94a3b8;
+        font-size: 12px;
+        line-height: 1.4;
+      }
+      .count {
+        margin: 12px 0 8px;
+        padding: 10px 12px;
+        border-radius: 8px;
+        background: #1e293b;
+        border: 1px solid #334155;
+      }
+      .count strong {
+        display: block;
+        font-size: 28px;
+        line-height: 1;
+        color: #f87171;
+      }
+      .count span {
+        display: block;
+        margin-top: 6px;
+        font-size: 12px;
+        color: #cbd5e1;
+      }
+      button {
+        display: block;
+        width: 100%;
+        margin-top: 12px;
+        padding: 8px 10px;
+        border: 0;
+        border-radius: 8px;
+        background: #be123c;
+        color: #fff;
+        font: inherit;
+        font-size: 12px;
+        font-weight: 650;
+        cursor: pointer;
+      }
+      button:disabled {
+        cursor: default;
+        opacity: 0.85;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Fin-Guardian</h1>
+      <p>Scam indicators on this page</p>
+      <div class="count">
+        <strong id="match-count">—</strong>
+        <span id="match-label">Checking the current page…</span>
+      </div>
+      <p>Red highlights mark flagged keywords or Ethereum wallets. Hover a highlight for details.</p>
+      <button id="report-btn" type="button">🚨 Report flagged content</button>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
